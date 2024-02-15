@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import CoursePage from "./pages/CoursePage";
 import CourseListPage from "./pages/CourseListPage";
 import WishlistPage from "./pages/WishlistPage";
+import QuestionListPage from "./pages/QuestionListPage";
+import QuestionPage from "./pages/QuestionPage.jsx";
 
 function Main() {
   return (
@@ -16,6 +18,8 @@ function Main() {
             path="courses/react-frontend-development"
             element={<CoursePage />}
           />
+          <Route path="questions" element={<QuestionListPage />}></Route>
+          <Route path="questions/616825" element={<QuestionPage />}></Route>
           <Route path="wishlist" element={<WishlistPage />} />
         </Routes>
       </App>
